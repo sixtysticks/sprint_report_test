@@ -1,0 +1,29 @@
+<h1>Report</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sprint</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Total days</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sprints.each do |sprint| %>
+      <tr>
+        <td><%= sprint.name_sprint %></td>
+        <td><%= sprint.from %></td>
+        <td><%= sprint.to %></td>
+        <td><%= sprint.total_days %></td>
+        <td><%= link_to 'Export to PDF', sprint_path(sprint, :format => 'pdf') %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Export ALL to PDF', :format => 'pdf' %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_sprint: MyString
+  from: 1
+  to: 1
+  total_days: 1
+
+two:
+  name_sprint: MyString
+  from: 1
+  to: 1
+  total_days: 1
